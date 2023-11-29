@@ -6,10 +6,10 @@ void main() {
       home: Scaffold(
         appBar: AppBar(
           title: const Center(
-            child: Text("Start App"),
+            child: Text("Start Apps"),
           ),
           backgroundColor: const Color.fromARGB(255, 206, 170, 72),
-        ),
+        ),git
         body: const Center(
             child: Image(
           image: AssetImage('save2.png'),
