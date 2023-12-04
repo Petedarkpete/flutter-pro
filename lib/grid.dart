@@ -18,26 +18,9 @@ class MyWidget extends StatelessWidget {
           backgroundColor: const Color.fromARGB(255, 206, 170, 72),
         ),
         body: GridView.count(
-          crossAxisCount: 6,
+          crossAxisCount: 4,
+          
           children: [
-            Container(
-              alignment: Alignment.center,
-              child: Text('Drawing'),
-              margin: EdgeInsets.all(20.20),
-              padding: EdgeInsets.all(20.20),
-              color: const Color.fromARGB(255, 230, 217, 191),
-              width: 100,
-              height: 100,
-            ),
-            Container(
-              alignment: Alignment.center,
-              child: Text('Drawing'),
-              margin: EdgeInsets.all(20.20),
-              padding: EdgeInsets.all(20.20),
-              color: const Color.fromARGB(255, 230, 217, 191),
-              width: 100,
-              height: 100,
-            ),
             Container(
               alignment: Alignment.center,
               child: Text('Drawing'),

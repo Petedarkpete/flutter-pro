@@ -12,8 +12,18 @@ class MyWidget extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Center(
-            child: Text("Start Apps"),
+          title: Container(
+            alignment: Alignment.center,
+            padding: EdgeInsets.all(20.20),
+            margin: EdgeInsets.all(8.0),
+            child: Text(
+              "Start Apps",
+              style: TextStyle(
+                fontSize: 20.0,
+                fontWeight: FontWeight.bold,
+                color: Colors.white, // Adjust the text color as needed
+              ),
+            ),
           ),
           backgroundColor: const Color.fromARGB(255, 206, 170, 72),
         ),
@@ -22,12 +32,18 @@ class MyWidget extends StatelessWidget {
           children: [
             Container(
               alignment: Alignment.center,
-              child: Text('Drawing'),
+              child: Text(
+                'Drawing',
+                style: const TextStyle(
+                  fontSize: 18.0,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
               margin: EdgeInsets.all(20.20),
               padding: EdgeInsets.all(20.20),
               color: const Color.fromARGB(255, 230, 217, 191),
               width: 400,
-              height: 100,
+              height: 600,
             ),
             Container(
               child: Text('If the widget has an alignment, '
@@ -38,7 +54,7 @@ class MyWidget extends StatelessWidget {
               margin: const EdgeInsets.all(20.20),
               alignment: Alignment.bottomRight,
               width: 200,
-              height: 100,
+              height: 600,
             ),
           ],
         ),
