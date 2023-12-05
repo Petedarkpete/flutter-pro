@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fl_chart/fl_chart.dart';
 
 void main() {
   runApp(MyWidget());
@@ -55,6 +56,24 @@ class MyWidget extends StatelessWidget {
               alignment: Alignment.bottomRight,
               width: 200,
               height: 600,
+            ),
+            PieChart(
+              PieChartData(
+                sections: [
+                  PieChartSectionData(
+                    value: 52,
+                    color: Colors.teal,
+                    title: 'Girls',
+                    radius: 80,
+                  ),
+                  PieChartSectionData(
+                    value: 48,
+                    color: Colors.pinkAccent,
+                    title: 'Boys',
+                    radius: 80,
+                  ),
+                ],
+              ),
             ),
           ],
         ),
