@@ -17,65 +17,76 @@ class MyWidget extends StatelessWidget {
             alignment: Alignment.center,
             padding: EdgeInsets.all(20.20),
             margin: EdgeInsets.all(8.0),
-            child: Text(
-              "Start Apps",
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.white, // Adjust the text color as needed
-              ),
-            ),
+            child: Text("Start Apps"),
           ),
           backgroundColor: const Color.fromARGB(255, 206, 170, 72),
         ),
-        body: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Container(
-              alignment: Alignment.center,
-              child: Text(
-                'Drawing',
-                style: const TextStyle(
-                  fontSize: 18.0,
-                  fontWeight: FontWeight.bold,
+        body: Container(
+          child: Row(
+            children: [
+              Column(children: [
+                Container(
+                  alignment: Alignment.topRight,
+                  height: 100,
+                  width: 100,
+                  padding: EdgeInsets.all(100),
+                  margin: EdgeInsets.all(40),
+                  color: Colors.black12,
+                  child: Text('Test'),
                 ),
-              ),
-              margin: EdgeInsets.all(20.20),
-              padding: EdgeInsets.all(20.20),
-              color: const Color.fromARGB(255, 230, 217, 191),
-              width: 400,
-              height: 600,
-            ),
-            Container(
-              child: Text('If the widget has an alignment, '
-                  'and the parent provides bounded constraints, then the Container tries to expand to'
-                  'fit the parent, and then positions the child within itself as per the alignment.'),
-              color: const Color.fromARGB(255, 230, 217, 191),
-              padding: const EdgeInsets.all(20.20),
-              margin: const EdgeInsets.all(20.20),
-              alignment: Alignment.bottomRight,
-              width: 200,
-              height: 600,
-            ),
-            PieChart(
-              PieChartData(
-                sections: [
-                  PieChartSectionData(
-                    value: 52,
-                    color: Colors.teal,
-                    title: 'Girls',
-                    radius: 80,
-                  ),
-                  PieChartSectionData(
-                    value: 48,
-                    color: Colors.pinkAccent,
-                    title: 'Boys',
-                    radius: 80,
-                  ),
-                ],
-              ),
-            ),
-          ],
+                Container(
+                  decoration: BoxDecoration(
+                      color: Colors.black,
+                      borderRadius: BorderRadius.circular(30.0)),
+                  alignment: Alignment.topRight,
+                  height: 100,
+                  width: 100,
+                  padding: EdgeInsets.all(100),
+                  margin: EdgeInsets.all(40),
+                  color: Colors.black12,
+                  child: Text('Test'),
+                ),
+                Container(
+                  alignment: Alignment.topRight,
+                  height: 100,
+                  width: 100,
+                  padding: EdgeInsets.all(100),
+                  margin: EdgeInsets.all(40),
+                  color: Colors.black12,
+                  child: Text('Test'),
+                ),
+              ]),
+              Column(children: [
+                Container(
+                  alignment: Alignment.topRight,
+                  height: 100,
+                  width: 100,
+                  padding: EdgeInsets.all(100),
+                  margin: EdgeInsets.all(40),
+                  color: Colors.black12,
+                  child: Text('Test'),
+                ),
+                Container(
+                  alignment: Alignment.topRight,
+                  height: 100,
+                  width: 100,
+                  padding: EdgeInsets.all(100),
+                  margin: EdgeInsets.all(40),
+                  color: Colors.black12,
+                  child: Text('Test'),
+                ),
+                Container(
+                  alignment: Alignment.topRight,
+                  height: 100,
+                  width: 100,
+                  padding: EdgeInsets.all(100),
+                  margin: EdgeInsets.all(40),
+                  color: Colors.black12,
+                  child: Text('Test'),
+                ),
+              ]),
+            ],
+          ),
         ),
         backgroundColor: const Color.fromARGB(255, 252, 252, 252),
       ),
