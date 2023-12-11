@@ -24,67 +24,39 @@ class MyWidget extends StatelessWidget {
         body: Container(
           child: Row(
             children: [
-              Column(children: [
-                Container(
-                  alignment: Alignment.topRight,
-                  height: 100,
-                  width: 100,
-                  padding: EdgeInsets.all(100),
-                  margin: EdgeInsets.all(40),
-                  color: Colors.black12,
-                  child: Text('Test'),
+              Container(
+                alignment: Alignment.center,
+                height: 100,
+                width: 100,
+                padding: EdgeInsets.all(12.0),
+                margin: EdgeInsets.all(12.0),
+                child: Row(
+                  children: [Text('hy1')],
                 ),
-                Container(
-                  decoration: BoxDecoration(
-                      color: Colors.black,
-                      borderRadius: BorderRadius.circular(30.0)),
-                  alignment: Alignment.topRight,
-                  height: 100,
-                  width: 100,
-                  padding: EdgeInsets.all(100),
-                  margin: EdgeInsets.all(40),
-                  color: Colors.black12,
-                  child: Text('Test'),
+                color: Colors.black12,
+              ),
+              Container(
+                alignment: Alignment.center,
+                height: 100,
+                width: 100,
+                padding: EdgeInsets.all(12.0),
+                margin: EdgeInsets.all(12.0),
+                child: Row(
+                  children: [Text('hy1')],
                 ),
-                Container(
-                  alignment: Alignment.topRight,
-                  height: 100,
-                  width: 100,
-                  padding: EdgeInsets.all(100),
-                  margin: EdgeInsets.all(40),
-                  color: Colors.black12,
-                  child: Text('Test'),
+                color: Colors.black12,
+              ),
+              Container(
+                alignment: Alignment.center,
+                height: 100,
+                width: 100,
+                padding: EdgeInsets.all(12.12),
+                margin: EdgeInsets.all(12.12),
+                child: Row(
+                  children: [Text('hy')],
                 ),
-              ]),
-              Column(children: [
-                Container(
-                  alignment: Alignment.topRight,
-                  height: 100,
-                  width: 100,
-                  padding: EdgeInsets.all(100),
-                  margin: EdgeInsets.all(40),
-                  color: Colors.black12,
-                  child: Text('Test'),
-                ),
-                Container(
-                  alignment: Alignment.topRight,
-                  height: 100,
-                  width: 100,
-                  padding: EdgeInsets.all(100),
-                  margin: EdgeInsets.all(40),
-                  color: Colors.black12,
-                  child: Text('Test'),
-                ),
-                Container(
-                  alignment: Alignment.topRight,
-                  height: 100,
-                  width: 100,
-                  padding: EdgeInsets.all(100),
-                  margin: EdgeInsets.all(40),
-                  color: Colors.black12,
-                  child: Text('Test'),
-                ),
-              ]),
+                color: Colors.black12,
+              ),
             ],
           ),
         ),
