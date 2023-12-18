@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fl_chart/fl_chart.dart';
+import 'package:badges/badges.dart' as badges;
 
 void main() {
   runApp(MyWidget());
@@ -22,6 +23,27 @@ class MyWidget extends StatelessWidget {
           backgroundColor: const Color.fromARGB(255, 206, 170, 72),
         ),
         body: Column(children: [
+          Column(
+            children: [
+              Row(
+                children: [
+                  Container(
+                    child: Text('Hy'),
+                  ),
+                  Container(
+                    child: Text('Ju'),
+                  ),
+                  Container(
+                    child: Text(
+                      'ki',
+                      style: TextStyle(),
+                      textAlign: TextAlign.start,
+                    ),
+                  )
+                ],
+              ),
+            ],
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
             mainAxisSize: MainAxisSize.max,
@@ -31,7 +53,7 @@ class MyWidget extends StatelessWidget {
                 width: 120.0,
                 padding: EdgeInsets.all(8.0),
                 margin: EdgeInsets.all(8.0),
-                color: const Color.fromARGB(255, 139, 169, 194),
+                color: Color.fromARGB(255, 111, 139, 161),
                 child: Text('Hy'),
               ),
               Container(
@@ -43,14 +65,16 @@ class MyWidget extends StatelessWidget {
                 child: Text('Ju'),
               ),
               Container(
+                decoration: BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.circular(10)),
                 height: 80.0,
                 width: 120.0,
                 padding: EdgeInsets.all(8.0),
                 margin: EdgeInsets.all(8.0),
-                color: const Color.fromARGB(255, 139, 169, 194),
                 child: Center(
                   child: Text(
-                    'ki',
+                    'kiww',
                     style: TextStyle(
                       fontSize: 24.0,
                       color: const Color.fromARGB(255, 240, 140, 109),
@@ -73,7 +97,7 @@ class MyWidget extends StatelessWidget {
                 child: Text('ki'),
               )
             ],
-          )
+          ),
         ]),
         backgroundColor: const Color.fromARGB(255, 252, 252, 252),
       ),
