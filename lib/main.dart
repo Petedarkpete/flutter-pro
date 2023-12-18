@@ -21,45 +21,60 @@ class MyWidget extends StatelessWidget {
           ),
           backgroundColor: const Color.fromARGB(255, 206, 170, 72),
         ),
-        body: Container(
-          child: Row(
+        body: Column(children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            mainAxisSize: MainAxisSize.max,
             children: [
               Container(
-                alignment: Alignment.center,
-                height: 100,
-                width: 100,
-                padding: EdgeInsets.all(12.0),
-                margin: EdgeInsets.all(12.0),
-                child: Row(
-                  children: [Text('hy1')],
-                ),
-                color: Colors.black12,
+                height: 80.0,
+                width: 120.0,
+                padding: EdgeInsets.all(8.0),
+                margin: EdgeInsets.all(8.0),
+                color: const Color.fromARGB(255, 139, 169, 194),
+                child: Text('Hy'),
               ),
               Container(
-                alignment: Alignment.center,
-                height: 100,
-                width: 100,
-                padding: EdgeInsets.all(12.0),
-                margin: EdgeInsets.all(12.0),
-                child: Row(
-                  children: [Text('hy1')],
-                ),
-                color: Colors.black12,
+                height: 80.0,
+                width: 120.0,
+                padding: EdgeInsets.all(8.0),
+                margin: EdgeInsets.all(8.0),
+                color: const Color.fromARGB(255, 139, 169, 194),
+                child: Text('Ju'),
               ),
               Container(
-                alignment: Alignment.center,
-                height: 100,
-                width: 100,
-                padding: EdgeInsets.all(12.12),
-                margin: EdgeInsets.all(12.12),
-                child: Row(
-                  children: [Text('hy')],
+                height: 80.0,
+                width: 120.0,
+                padding: EdgeInsets.all(8.0),
+                margin: EdgeInsets.all(8.0),
+                color: const Color.fromARGB(255, 139, 169, 194),
+                child: Center(
+                  child: Text(
+                    'ki',
+                    style: TextStyle(
+                      fontSize: 24.0,
+                      color: const Color.fromARGB(255, 240, 140, 109),
+                    ),
+                  ),
                 ),
-                color: Colors.black12,
               ),
             ],
           ),
-        ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Container(
+                child: Text('Hy'),
+              ),
+              Container(
+                child: Text('Ju'),
+              ),
+              Container(
+                child: Text('ki'),
+              )
+            ],
+          )
+        ]),
         backgroundColor: const Color.fromARGB(255, 252, 252, 252),
       ),
     );
