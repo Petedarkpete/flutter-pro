@@ -18,7 +18,7 @@ class MyWidget extends StatelessWidget {
             alignment: Alignment.center,
             padding: EdgeInsets.all(20.20),
             margin: EdgeInsets.all(8.0),
-            child: Text("Start Apps"),
+            child: Text("Customer App"),
           ),
           backgroundColor: const Color.fromARGB(255, 206, 170, 72),
         ),
@@ -28,8 +28,29 @@ class MyWidget extends StatelessWidget {
               Row(
                 children: [
                   Container(
+                    height: 40,
+                    width: 40,
+                    margin: EdgeInsets.all(5.0),
+                    decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: Color.fromARGB(255, 243, 168, 71),
+                        border: Border.all(
+                          color: const Color.fromARGB(115, 124, 122, 122),
+                          width: 1.0,
+                        )),
+                    child: Center(
+                      child: Text(
+                        'PN',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                        textAlign: TextAlign.start,
+                      ),
+                    ),
+                  ),
+                  Container(
                     child: Text(
-                      'Good Morning',
+                      'Goodmorning',
                       style: TextStyle(),
                       textAlign: TextAlign.start,
                     ),
@@ -55,10 +76,8 @@ class MyWidget extends StatelessWidget {
                 padding: EdgeInsets.all(8.0),
                 margin: EdgeInsets.all(8.0),
                 child: Column(
-                  
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    
                     Container(
                       alignment: Alignment.center,
                       decoration: BoxDecoration(
@@ -78,24 +97,27 @@ class MyWidget extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Container(
+                            padding: EdgeInsets.all(8.0),
                             child: Text(
-                          "Ksh. 5,000",
-                          style: TextStyle(
-                            fontSize: 20.0,
-                          ),
-                        )),
+                              "Ksh. 5,000",
+                              style: TextStyle(
+                                fontSize: 24.0,
+                              ),
+                            )),
                         Container(
                           margin: EdgeInsets.only(left: 10),
                           alignment: Alignment.center,
                           width: 70,
+                          height: 20,
                           decoration: BoxDecoration(
                             color: Color.fromARGB(255, 221, 74, 16),
-                            borderRadius: BorderRadius.circular(5),
+                            borderRadius: BorderRadius.circular(8),
                           ),
                           child: Text(
-                            "arrears",
+                            "Arrears",
                             style: TextStyle(
                               color: Color.fromARGB(255, 231, 226, 223),
+                              fontSize: 12.0,
                             ),
                           ),
                         )
