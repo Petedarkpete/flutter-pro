@@ -28,14 +28,8 @@ class MyWidget extends StatelessWidget {
               Row(
                 children: [
                   Container(
-                    child: Text('Hy'),
-                  ),
-                  Container(
-                    child: Text('Ju'),
-                  ),
-                  Container(
                     child: Text(
-                      'ki',
+                      'Good Morning',
                       style: TextStyle(),
                       textAlign: TextAlign.start,
                     ),
@@ -45,41 +39,76 @@ class MyWidget extends StatelessWidget {
             ],
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.end,
+            mainAxisAlignment: MainAxisAlignment.center,
             mainAxisSize: MainAxisSize.max,
             children: [
               Container(
-                height: 80.0,
-                width: 120.0,
-                padding: EdgeInsets.all(8.0),
-                margin: EdgeInsets.all(8.0),
-                color: Color.fromARGB(255, 111, 139, 161),
-                child: Text('Hy'),
-              ),
-              Container(
-                height: 80.0,
-                width: 120.0,
-                padding: EdgeInsets.all(8.0),
-                margin: EdgeInsets.all(8.0),
-                color: const Color.fromARGB(255, 139, 169, 194),
-                child: Text('Ju'),
-              ),
-              Container(
                 decoration: BoxDecoration(
-                    color: Colors.blue,
-                    borderRadius: BorderRadius.circular(10)),
-                height: 80.0,
-                width: 120.0,
+                    color: Color.fromARGB(255, 247, 244, 239),
+                    borderRadius: BorderRadius.circular(10),
+                    border: Border.all(
+                      color: const Color.fromARGB(115, 124, 122, 122),
+                      width: 1.0,
+                    )),
+                height: 120.0,
+                width: 275.0,
                 padding: EdgeInsets.all(8.0),
                 margin: EdgeInsets.all(8.0),
-                child: Center(
-                  child: Text(
-                    'kiww',
-                    style: TextStyle(
-                      fontSize: 24.0,
-                      color: const Color.fromARGB(255, 240, 140, 109),
+                child: Column(
+                  
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    
+                    Container(
+                      alignment: Alignment.center,
+                      decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 243, 168, 71),
+                        borderRadius: BorderRadius.circular(5),
+                      ),
+                      height: 30.0,
+                      width: 110.0,
+                      child: Text(
+                        "Loan Balance",
+                        style: TextStyle(
+                          fontSize: 13.0,
+                        ),
+                      ),
                     ),
-                  ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                            child: Text(
+                          "Ksh. 5,000",
+                          style: TextStyle(
+                            fontSize: 20.0,
+                          ),
+                        )),
+                        Container(
+                          margin: EdgeInsets.only(left: 10),
+                          alignment: Alignment.center,
+                          width: 70,
+                          decoration: BoxDecoration(
+                            color: Color.fromARGB(255, 221, 74, 16),
+                            borderRadius: BorderRadius.circular(5),
+                          ),
+                          child: Text(
+                            "arrears",
+                            style: TextStyle(
+                              color: Color.fromARGB(255, 231, 226, 223),
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
+                    Text(
+                      'Medical Credit 8000',
+                      style: TextStyle(
+                        fontSize: 15.0,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ],
