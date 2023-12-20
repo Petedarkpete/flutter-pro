@@ -138,14 +138,29 @@ class MyWidget extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Container(
-                child: Text('Hy'),
+              Column(
+                children: [
+                  Container(
+                    height: 30,
+                    width: 30,
+                    decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: Color.fromARGB(255, 243, 111, 71),
+                        border: Border.all(
+                          color: const Color.fromARGB(115, 124, 122, 122),
+                          width: 1.0,
+                        )),
+                  ),
+                  Container(
+                    child: Text('Apply Loan'),
+                  ),
+                ],
               ),
               Container(
-                child: Text('Ju'),
+                child: Text('Pay Loan'),
               ),
               Container(
-                child: Text('ki'),
+                child: Text('Points'),
               )
             ],
           ),
